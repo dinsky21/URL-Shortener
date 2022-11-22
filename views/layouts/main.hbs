@@ -2,15 +2,17 @@
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>URL shortening</title>
+    <title>URL Shortener</title>
     <link
       href='https://bootswatch.com/5/morph/bootstrap.min.css'
       rel='stylesheet'
       crossorigin='anonymous'
     />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body class='bg-light'>
-    <header>
+
+    <!-- <header>
       <nav
         class='navbar navbar-dark justify-content-between'
         style='padding: 8px 16px;'
@@ -18,9 +20,15 @@
         <a class='navbar-brand' href='/'>Todo List</a>
         <a class='btn btn-outline-light' href='/todos/new'>Create</a>
       </nav>
-    </header>
+    </header> -->
     <main>
-      <div class='container mt-3'>
+      <div class='container mt-5'>
+        <h1>URL Shortener</h1>
+        <img
+          class='img-fluid m-3'
+          src='https://assets-lighthouse.alphacamp.co/uploads/image/file/16716/ExportedContentImage_00.png'
+          alt='URL Shortener'
+        />
         {{{body}}}
       </div>
     </main>
@@ -29,5 +37,6 @@
       integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM'
       crossorigin='anonymous'
     ></script>
+    <script src='/javascripts/main.js'></script>
   </body>
 </html>
