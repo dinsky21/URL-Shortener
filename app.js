@@ -1,4 +1,4 @@
-// require('dotenv').config({ override: true })
+require('dotenv').config({ override: true })
 const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
