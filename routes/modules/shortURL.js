@@ -13,7 +13,7 @@ router.post('/', (req, res) => {
       .lean()
       .then((arr) => {
         const isInDB = arr.filter((e) => e.url.includes(url))
-        if (isInDB.length >= 1 || url === '') {
+        if (isInDB.length >= 1) {
           res.render('shortURL', { web: isInDB[0] })
         } else {
           const code = generateCode(url)

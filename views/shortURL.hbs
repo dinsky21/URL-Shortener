@@ -1,9 +1,20 @@
-<div class='container d-flex'><input
-    class='form-control px-3'
-    type='text'
-    placeholder='url'
-    name='url'
-    id='copyFromInput'
-    value=' {{web.shortURL}} '
-  />
-  <button class='btn btn-success' onclick='copyFromInput()'>Copy</button></div>
+<div class='row g-3 justify-content-center mt-5'>
+  <div class='col-12 text-center'><h3>Success! Please copy the link below</h3></div>
+  <div class='col-5 ms-5 ps-5'>
+    <input
+      class='form-control px-3'
+      type='text'
+      placeholder='url'
+      name='url'
+      id='copyFromInput'
+      value=' {{web.shortURL}} '
+    />
+  </div>
+
+  <div class='col-2'>
+    <button
+      class='btn btn-outline-success'
+      onclick='copyFromInput()'
+    >Copy</button>
+  </div>
+</div>
